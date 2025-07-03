@@ -1,0 +1,127 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    overflow-y: hidden;
+}
+
+header{
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.555);
+    backdrop-filter: blur(5px); 
+    height: 10vh;
+    border-bottom: ghostwhite 1px solid;
+    border-top: ghostwhite 1px solid;
+    width: 100%;
+    transition: 0.3s ease;
+}
+
+.logo{
+    letter-spacing: -7px;
+    text-decoration: none;
+    font-size: 3rem;
+    font-family: none;
+    /* margin-left: 5%; */
+    padding: 10px;
+    color: ghostwhite;
+    /* border-right: ghostwhite 2px solid; */
+    transition: 0.3s ease;
+}
+
+.btn{
+    color: ghostwhite;
+    text-decoration: none;
+    padding: .5rem 1.5rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    background-color: transparent;
+    box-shadow: ghostwhite 0px 0px 5px;
+    border-radius: 10px;
+    border: ghostwhite 1px solid;
+    transition: 0.3s ease;
+}
+
+.btn:hover{
+    background-color: ghostwhite;
+    color: black;
+    box-shadow: ghostwhite 0px 0px 15px;
+    transition: 0.3s ease;
+}
+
+hr{
+    display: none;
+}
+
+.menu-toggle{
+    display: none;
+    background: none;
+    border: none;
+    color: ghostwhite;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.menu-toggle:hover {
+    text-shadow: ghostwhite 0px 0px 20px;
+}
+
+/* Celular */
+@media (max-width: 700px) {
+ header{
+    /* position: fixed;
+    display: flex; */
+    justify-content: space-between;
+    /* align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); ;
+    backdrop-filter: blur(5px);
+    height: 10vh;
+    border-bottom: ghostwhite 1px solid;
+    border-top: ghostwhite 1px solid;
+    width: 100%; */
+}
+
+.logo{
+    /* letter-spacing: -6px;
+    text-decoration: none; */
+    font-size: 2.5rem;
+    /* padding: 10px;
+    color: ghostwhite; */
+}
+
+.btn{
+    /* color: ghostwhite;
+    text-decoration: none; */
+    padding: .4rem 1rem;
+    margin-right: 1.5vh;
+    /* font-weight: bold;
+    letter-spacing: 2px;
+    background-color: transparent;
+    box-shadow: ghostwhite 0px 0px 5px;
+    border-radius: 10px;
+    border: ghostwhite 1px solid;
+    transition: 0.3s; */
+}
+
+.menu-toggle {
+    display: flex;
+    background: none;
+    align-content: center;
+    justify-content: center;
+    padding: 2px 5px;
+    margin-left: .5vh;
+    border-radius: 5px;
+    color: ghostwhite;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.menu-toggle:hover {
+    text-shadow: ghostwhite 0px 0px 20px;
+}
+}
